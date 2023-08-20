@@ -1,15 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>strona dla biura nieruchomośći
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href=""
-      rel="stylesheet"
-    />
-    <title></title>
-  </head>
-  <body>
-    <h1></h1>
-  </body>
+    <link href="" rel="stylesheet" />
+    <title>Znajdź swój dom z nami.</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,600;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Main navigation container -->
+<nav
+  class="relative flex w-full flex-wrap items-center justify-between py-2 text-neutral-500 hover:text-blue-700 dark:bg-neutral-600 lg:py-4"
+  data-te-navbar-ref>
+  <div class="flex w-full flex-wrap items-center justify-between px-3">
+    <div>
+      <a
+        class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+        href="#">
+        <img
+          class="mr-2"
+          src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
+          style="height: 20px"
+          alt="TE Logo"
+          loading="lazy" />
+      </a>
+    </div>
+
+    <!-- Hamburger button for mobile view -->
+    <button
+      class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
+      type="button"
+      data-te-collapse-init
+      data-te-target="#navbarSupportedContent4"
+      aria-controls="navbarSupportedContent4"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <!-- Hamburger icon -->
+      <span class="[&>svg]:w-7">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-7 w-7">
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+
+    <!-- Collapsible navbar container -->
+    <div
+      class="!visible mt-2 hidden  flex-grow basis-[100%] items-center md:mt-0 md:!flex md:basis-auto"
+      id="navbarSupportedContent4"
+      data-te-collapse-item>
+      <!-- Left links -->
+      <ul
+        class="list-style-none mx-auto flex flex-col pl-0 md:mt-1 md:flex-row"
+        data-te-navbar-nav-ref>
+        <!-- Home link -->
+        <li
+          class="my-4 mx-4"
+          data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            aria-current="page"
+            href="#"
+            data-te-nav-link-ref
+            >Home</a
+          >
+        </li>
+        <li
+        class="my-4 mx-4"
+        data-te-nav-item-ref>
+        <a
+          class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+          aria-current="page"
+          href="#"
+          data-te-nav-link-ref
+          >Jak to działa</a
+        >
+      </li>
+      <li
+      class="my-4 mx-4"
+      data-te-nav-item-ref>
+      <a
+        class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+        aria-current="page"
+        href="#"
+        data-te-nav-link-ref
+        >Agenci</a
+      >
+    </li>
+    <li
+    class="my-4 mx-4"
+    data-te-nav-item-ref>
+    <a
+      class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+      aria-current="page"
+      href="#"
+      data-te-nav-link-ref
+      >Sprzedaż</a
+    >
+  </li>
+      </ul>
+
+      <div class="flex items-center">
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mr-3 inline-block rounded-md bg-blue-600 px-12 my-2 py-4 text-white text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out shadow-lg shadow-blue-500 hover:shadow-md hover:shadow-blue-500">
+          Kontakt
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+
 </html>

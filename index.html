@@ -10,123 +10,165 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,600;1,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,600;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<!-- Main navigation container -->
-<nav
-  class="relative flex w-full flex-wrap items-center justify-between py-2 text-neutral-500 hover:text-blue-700 dark:bg-neutral-600 lg:py-4"
-  data-te-navbar-ref>
-  <div class="flex w-full flex-wrap items-center justify-between px-3">
-    <div>
-      <a
-        class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
-        href="#">
-        <img
-          class="mr-2"
-          src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
-          style="height: 20px"
-          alt="TE Logo"
-          loading="lazy" />
-      </a>
-    </div>
+    <!-- Main navigation container -->
+    <nav class="relative flex mx-auto max-w-7xl flex-wrap items-center justify-between py-2 text-neutral-500 hover:text-blue-700 dark:bg-neutral-600 lg:py-4"
+        data-te-navbar-ref>
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div>
+                <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+                    href="#">
+                    <img class="mr-2" src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
+                        style="height: 20px" alt="TE Logo" loading="lazy" />
+                </a>
+            </div>
 
-    <!-- Hamburger button for mobile view -->
-    <button
-      class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
-      type="button"
-      data-te-collapse-init
-      data-te-target="#navbarSupportedContent4"
-      aria-controls="navbarSupportedContent4"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <!-- Hamburger icon -->
-      <span class="[&>svg]:w-7">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="h-7 w-7">
-          <path
-            fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-            clip-rule="evenodd" />
-        </svg>
-      </span>
-    </button>
+            <!-- Hamburger button for mobile view -->
+            <button
+                class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
+                type="button" data-te-collapse-init data-te-target="#navbarSupportedContent4"
+                aria-controls="navbarSupportedContent4" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Hamburger icon -->
+                <span class="[&>svg]:w-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
 
-    <!-- Collapsible navbar container -->
-    <div
-      class="!visible mt-2 hidden  flex-grow basis-[100%] items-center md:mt-0 md:!flex md:basis-auto"
-      id="navbarSupportedContent4"
-      data-te-collapse-item>
-      <!-- Left links -->
-      <ul
-        class="list-style-none mx-auto flex flex-col pl-0 md:mt-1 md:flex-row"
-        data-te-navbar-nav-ref>
-        <!-- Home link -->
-        <li
-          class="my-4 mx-4"
-          data-te-nav-item-ref>
-          <a
-            class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            aria-current="page"
-            href="#"
-            data-te-nav-link-ref
-            >Home</a
-          >
-        </li>
-        <li
-        class="my-4 mx-4"
-        data-te-nav-item-ref>
-        <a
-          class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-          aria-current="page"
-          href="#"
-          data-te-nav-link-ref
-          >Jak to działa</a
-        >
-      </li>
-      <li
-      class="my-4 mx-4"
-      data-te-nav-item-ref>
-      <a
-        class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-        aria-current="page"
-        href="#"
-        data-te-nav-link-ref
-        >Agenci</a
-      >
-    </li>
-    <li
-    class="my-4 mx-4"
-    data-te-nav-item-ref>
-    <a
-      class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-      aria-current="page"
-      href="#"
-      data-te-nav-link-ref
-      >Sprzedaż</a
-    >
-  </li>
-      </ul>
+            <!-- Collapsible navbar container -->
+            <div class="!visible mt-2 hidden  flex-grow basis-[100%] items-center md:mt-0 md:!flex md:basis-auto"
+                id="navbarSupportedContent4" data-te-collapse-item>
+                <!-- Left links -->
+                <ul class="list-style-none mx-auto font-semibold flex flex-col pl-0 md:mt-1 md:flex-row"
+                    data-te-navbar-nav-ref>
+                    <!-- Home link -->
+                    <li class="my-4 mx-4" data-te-nav-item-ref>
+                        <a class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            aria-current="page" href="#" data-te-nav-link-ref>Home</a>
+                    </li>
+                    <li class="my-4 mx-4" data-te-nav-item-ref>
+                        <a class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            aria-current="page" href="#" data-te-nav-link-ref>Jak to działa</a>
+                    </li>
+                    <li class="my-4 mx-4" data-te-nav-item-ref>
+                        <a class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            aria-current="page" href="#" data-te-nav-link-ref>Agenci</a>
+                    </li>
+                    <li class="my-4 mx-4" data-te-nav-item-ref>
+                        <a class="text-neutral-500 hover:underline hover:text-blue-700 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            aria-current="page" href="#" data-te-nav-link-ref>Sprzedaż</a>
+                    </li>
+                </ul>
 
-      <div class="flex items-center">
-        <button
-          type="button"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-          class="mr-3 inline-block rounded-md bg-blue-600 px-12 my-2 py-4 text-white text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out shadow-lg shadow-blue-500 hover:shadow-md hover:shadow-blue-500">
-          Kontakt
-        </button>
-      </div>
-    </div>
-  </div>
-</nav>
+                <div class="flex items-center">
+                    <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                        class="mr-3 inline-block rounded-md bg-blue-600 px-12 my-2 py-4 text-white text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out shadow-[0px_10px_30px_-5px] shadow-blue-500 hover:shadow-md hover:shadow-blue-500">
+                        Kontakt
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="text-gray-600 body-font">
+            <div class=" py-2 px-4 max-w-[1400px] my-4 mx-auto flex flex-wrap">
+                <div
+                    class="flex flex-wrap w-full shadow-[0_5px_15px_rgba(0,0,0,0.35)] rounded-[35px] py-24 px-10 relative mb-4">
+                    <img alt="gallery"
+                        class="w-full object-cover h-full object-center rounded-[35px] block opacity-40  absolute inset-0"
+                        src="./piekny-tropikalny-osrodek-hotelowy-przy-plazy-z-basenem-raj-na-wakacje-ge.jpg" />
+                    <div class="text-center relative z-10 w-full">
+                        <h2 class="text-5xl text-[rgb(83,102,128)] font-semibold title-font mb-2">Znajdź dom idelany dla
+                            Siebie.
+                        </h2>
+                        <div class="mb-3">
+                            <div class="relative flex w-full my-4 flex-wrap items-stretch">
+                                <input type="search"
+                                    class="relative m-0 block bg-white rouneded w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.45rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                                    placeholder="Wpisz adres, kod pocztowy, miasto...." aria-label="Search"
+                                    aria-describedby="button-addon2" />
 
+                                <!--Search icon-->
+                                <span
+                                    class="input-group-text bg-white flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                                    id="basic-addon2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-grey">
+                <p class="text-center font-semibold text-gray-400">
+                    Zaufało na 20.000 firm
+                </p>
+                <div class="flex flex-row">
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class=" mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-semibold title-font mb-2 text-gray-500">Czym się zajmujemy</h1>
+                    <hr class="w-40 border-b-2 mb-4 border-indigo-500">
+                    <p class="text-gray-400">Agenci z pełnym zakresem usług, nowoczesna technologia.</p>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-[0px_5px_15px_rgba(0,0,0,0.32)]">
+
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-[0px_5px_15px_rgba(0,0,0,0.32)]">
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-[0px_5px_15px_rgba(0,0,0,0.32)]">
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-[0px_5px_15px_rgba(0,0,0,0.32)]">
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                                Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- script js -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </body>
